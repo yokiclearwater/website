@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.stroke li a {
+    position: relative;
+}
+  
+.stroke li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5;
+    left: 0;
+    background-color: #B4B6B1;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+.stroke li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
